@@ -30,6 +30,8 @@ libs = ["streamlit","adal","aiofiles","aiohttp","aiosignal","aiostream","altair"
         "webencodings","websocket-client","websockets","windows-curses","xmltodict","yapf","yarl",
         "zipp"]
 
+stanza.download('en')
+
 for lib in libs:
     os.system("pip install "+lib+" -i https://pypi.tuna.tsinghua.edu.cn/simple")
 
