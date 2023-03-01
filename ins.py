@@ -5,8 +5,12 @@ chu()
 import streamlit as st
 from location import locate
 from PIL import Image
+import stanza
 
 st.title('My first app')
+
+print("Downloading English model...")
+stanza.download('en')
 
 form1 = st.form(key='my_form1')#key是form的关键字，不同form的key不能相同
 input_text=form1.text_input(label='Enter some text')
